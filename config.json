@@ -1,0 +1,131 @@
+{
+  "_AI_INSTRUCTIONS": {
+    "ROLE": "You are a friendly Birthday Website Personalization Assistant.",
+    "HOW_TO_USE_THIS_FILE": [
+      "1. Read every field and '_guide' description in this JSON file.",
+      "2. Do NOT ask all questions at once. Interview the user warmly in small, easy groups of 3 to 5 questions at a time.",
+      "3. Ask clear, conversational questions for every customizable text, birthdate, curtain open date & time, passcode, photo caption/story, reason card, secret note, envelope letter, and grand finale message.",
+      "4. Remind the user where to place their image/audio files in the 'assets/' folder (e.g., assets/photos/p1.jpg, assets/cutouts/c1.png, assets/music/song.mp3).",
+      "5. Once all answers are collected, generate the COMPLETE, valid JSON file with the exact schema below so the user can copy-paste it directly into config.json."
+    ]
+  },
+  "meta": {
+    "pageTitle": "Happy Birthday Sakshi ✨👑",
+    "recipientName": "Sakshi",
+    "defaultTheme": "cosmicBlue",
+    "waxSealMonogram": "♛"
+  },
+  "curtain": {
+    "badge": "BIRTHDAY COUNTDOWN",
+    "title": "Happy Birthday Countdown 👑",
+    "subtitle": "A special birthday surprise is waiting behind the curtains",
+    "curtainOpenTimeISO": "2026-11-22T08:35:00",
+    "lockedMessage": "🔒 Curtains unlock automatically when the countdown reaches zero!",
+    "ctaText": "✨ Tap To Open Curtains ✨"
+  },
+  "vault": {
+    "kicker": "BIRTHDAY ACCESS",
+    "title": "Secret Passcode",
+    "subtitle": "Enter our passcode to unlock your birthday surprise.",
+    "passcodes": ["1102"],
+    "placeholder": "Passcode...",
+    "button": "Unlock Celebration ✨",
+    "hintBtn": "Need a hint?",
+    "hint": "Hint: Your special 4-digit date (DDMM) ✨",
+    "wrong": "Wrong passcode — try your special 4 digits!",
+    "loadingKicker": "UNLOCKING COSMOS",
+    "loadingText": "Preparing your birthday sky..."
+  },
+  "music": {
+    "enabled": true,
+    "title": "Play music",
+    "artist": "",
+    "file": "assets/music/song.mp3",
+    "fallbackSynth": true,
+    "playLabel": "Play",
+    "pauseLabel": "Pause"
+  },
+  "hero": {
+    "kicker": "CELEBRATING YOU",
+    "subtitle": "Make your birthday wish, explore your memories from small age to till now, and celebrate your special day!",
+    "nextPageCta": "Open Your Keepsake Letter & Finale ✨ →",
+    "intro": {
+      "line1": "Today isn't just another day...",
+      "line2": "Today is YOUR day.",
+      "badge": "A GOLDEN MILESTONE",
+      "headline": "HAPPY BIRTHDAY!"
+    }
+  },
+  "counter": {
+    "enabled": true,
+    "title": "Seconds You've Made The World Brighter",
+    "subtitle": "Every single moment since you arrived",
+    "birthDateISO": "2005-02-11T00:00:00",
+    "labels": { "days": "Days", "hours": "Hours", "minutes": "Minutes", "seconds": "Seconds" }
+  },
+  "cake": {
+    "title": "Make a Birthday Wish 🎂",
+    "subtitle": "Blow into your microphone or tap each glowing candle individually to extinguish it.",
+    "wishTitle": "Your Wish Has Been Sent to the Stars. ✨"
+  },
+  "cutouts": [
+    { "enabled": true, "image": "assets/cutouts/c1.png", "emoji": "👑", "entranceAnim": "comet-tail", "message": "Birthday Queen Arrived! 👑", "ringPos": { "x": -13.0, "y": 8.5, "z": -26, "rot": 0.14 } },
+    { "enabled": true, "image": "assets/cutouts/c2.png", "emoji": "🥳", "entranceAnim": "crown-drop", "message": "Pure Sunshine Energy ☀️", "ringPos": { "x": 0.0, "y": -9.5, "z": -26, "rot": -0.06 } },
+    { "enabled": true, "image": "assets/cutouts/c3.png", "emoji": "💖", "entranceAnim": "ribbon-twist", "message": "Bestie For Life 💖", "ringPos": { "x": 13.0, "y": 8.5, "z": -26, "rot": -0.14 } }
+  ],
+  "photos": {
+    "title": "From Small Age to Till Now 📸",
+    "subtitle": "Scroll through your favorite memories from small age to till now.",
+    "items": [
+      { "image": "assets/photos/p1.jpg", "isPng": false, "era": "01 • TINY KID", "color": "#ff4d88", "emoji": "🍼", "caption": "Where The Cuteness Started", "story": "Tiny cheeks and big curiosity from day one." },
+      { "image": "assets/photos/p2.jpg", "isPng": false, "era": "02 • CHILDHOOD", "color": "#ffe4b5", "emoji": "🧸", "caption": "Pure Mischief & Smiles", "story": "Endless energy and the brightest smile in every room." },
+      { "image": "assets/photos/p3.jpg", "isPng": false, "era": "03 • SCHOOL DAYS", "color": "#38bdf8", "emoji": "🎒", "caption": "Growing Up Fast", "story": "Backpacks, big dreams, and becoming everyone's favorite." },
+      { "image": "assets/photos/p4.jpg", "isPng": false, "era": "04 • TEEN YEARS", "color": "#c084fc", "emoji": "🎧", "caption": "Finding Your Spark", "story": "Inside jokes, playlists, and unforgettable chapters." },
+      { "image": "assets/photos/p5.jpg", "isPng": false, "era": "05 • GLOW-UP", "color": "#ff758f", "emoji": "✨", "caption": "Effortless Confidence", "story": "Stepping into every room with grace and joy." },
+      { "image": "assets/photos/p6.jpg", "isPng": false, "era": "06 • TILL NOW", "color": "#ff4d88", "emoji": "👑", "caption": "Today's Birthday Star", "story": "Look how far you've come—and the best is still ahead!" }
+    ],
+    "nextCard": {
+      "enabled": true,
+      "title": "And Here's To What's Next ✨",
+      "text": "From your earliest childhood moments to right now—here is to every new chapter and smile waiting ahead!"
+    }
+  },
+  "reasons": {
+    "title": "Why Everyone Loves You 💖",
+    "subtitle": "Tap each card to flip it over",
+    "items": [
+      { "num": "01", "front": "Pure Heart", "back": "You show up wholeheartedly and make people feel genuinely valued." },
+      { "num": "02", "front": "Bright Laugh", "back": "Your laugh changes the mood of any room in seconds." },
+      { "num": "03", "front": "Bold Spirit", "back": "You chase what you want with courage and heart." },
+      { "num": "04", "front": "True Loyalty", "back": "Having you in my corner is a gift I never take for granted." }
+    ]
+  },
+  "notes": {
+    "title": "Special Secret Notes 💌",
+    "subtitle": "Two notes saved just for you—tap to open!",
+    "closeText": "Close Note ✨",
+    "items": [
+      { "label": "Open When You Need Confidence", "tag": "CONFIDENCE NOTE 🔥", "title": "You Are Unstoppable", "message": "Whenever doubt shows up, remember every challenge you've already crushed. You are brilliant, kind, and capable of achieving anything!" },
+      { "label": "Open At Midnight Tonight", "tag": "MIDNIGHT WISH ✨", "title": "My Biggest Wish For You", "message": "May this year bring you peace, unexpected blessings, belly laughs, and people who celebrate you every single day. Happy Birthday!" }
+    ]
+  },
+  "envelope": {
+    "sectionTitle": "A Special Letter For You",
+    "frontLabel": "PRIVATE KEEPSAKE FOR SAKSHI",
+    "sealPrompt": "Tap the wax seal to break it",
+    "crest": "ROYAL EDITION • PERSONAL KEEPSAKE",
+    "greeting": "Dearest Sakshi,",
+    "paragraphs": [
+      "Happy Birthday! Today celebrates the day you arrived and made life warmer, funnier, and infinitely brighter.",
+      "Seeing your journey from your earliest childhood snapshots to the remarkable person you are today is truly inspiring. Thank you for every laugh, late-night talk, and unforgettable memory.",
+      "May this new chapter bring you boundless joy, radiant health, and every single dream you've wished upon the stars."
+    ],
+    "signOff": "With all my love & endless celebration,",
+    "signature": "Your Best Friend"
+  },
+  "queenFinale": {
+    "kicker": "GRAND FINALE • FOREVER ICON ✨",
+    "title": "Happy Birthday Queen 👑",
+    "message": "May your crown never tilt, your smile never fade, and every chapter ahead shine even brighter than the last!"
+  }
+}

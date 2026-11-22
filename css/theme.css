@@ -1,0 +1,4 @@
+/* Copy full css/theme.css from the "css/theme.css" editor tab */
+:root { --bg: #020612; --accent: #38bdf8; --accent-2: #bae6fd; --gold: #fde68a; --pearl: #fcfaf7; --muted: rgba(252,250,247,0.88); --border: rgba(255,228,181,0.36); --panel-bg: rgba(6,15,36,0.92); }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--pearl); overflow-x: hidden; }

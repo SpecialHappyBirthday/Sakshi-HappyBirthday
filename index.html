@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title id="page-title">Happy Birthday Sakshi ✨👑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+</head>
+<body>
+  <canvas id="gold-cursor-canvas" aria-hidden="true"></canvas>
+  <canvas id="fireworks-canvas" aria-hidden="true"></canvas>
+  <div class="theme-switcher-bar" id="theme-bar" title="Switch Theme">
+    <span class="theme-label-tag" id="theme-name">Cosmic Blue</span>
+    <button type="button" class="theme-dot" data-theme="lunarRose" style="background:linear-gradient(135deg,#ff4d88,#121733);"></button>
+    <button type="button" class="theme-dot active" data-theme="cosmicBlue" style="background:linear-gradient(135deg,#38bdf8,#061129);"></button>
+    <button type="button" class="theme-dot" data-theme="nebulaViolet" style="background:linear-gradient(135deg,#c084fc,#1b0933);"></button>
+    <button type="button" class="theme-dot" data-theme="auroraEmerald" style="background:linear-gradient(135deg,#34d399,#051c17);"></button>
+    <button type="button" class="fw-toggle-btn active" id="fw-toggle-btn" aria-pressed="true">🎆</button>
+  </div>
+  <div id="curtain-golden-reveal-glow" class="curtain-golden-reveal-glow" aria-hidden="true"></div>
+  <section id="curtain-stage" class="curtain-stage" role="button" tabindex="0">
+    <canvas id="curtain-3d-canvas" aria-hidden="true"></canvas>
+    <div class="curtain-center-crest">
+      <span class="curtain-badge" id="curtain-badge">BIRTHDAY COUNTDOWN</span>
+      <h1 class="curtain-heading" id="curtain-title">Happy Birthday Countdown 👑</h1>
+      <p class="curtain-sub" id="curtain-sub">A special birthday surprise is waiting behind the curtains</p>
+      <div class="curtain-countdown-row">
+        <div class="curtain-cd-box"><strong id="cd-days">00</strong><span>Days</span></div>
+        <div class="curtain-cd-box"><strong id="cd-hours">00</strong><span>Hours</span></div>
+        <div class="curtain-cd-box"><strong id="cd-mins">00</strong><span>Minutes</span></div>
+        <div class="curtain-cd-box"><strong id="cd-secs">00</strong><span>Seconds</span></div>
+      </div>
+      <div class="curtain-open-cta" id="curtain-cta">✨ Tap To Open Curtains ✨</div>
+    </div>
+  </section>
+  <section id="vault-overlay" class="vault-screen">
+    <div class="vault-medallion" id="vault-box">
+      <span class="kicker" id="v-kicker">BIRTHDAY ACCESS</span>
+      <h1 id="v-title">Secret Passcode</h1>
+      <p id="v-sub">Enter our passcode to unlock your birthday surprise.</p>
+      <form id="v-form" class="vault-form">
+        <input type="password" id="v-input" autocomplete="off" placeholder="Passcode..." required />
+        <button type="submit" id="v-btn" class="btn-ruby">Unlock Celebration ✨</button>
+      </form>
+      <p id="v-err" class="err-txt"></p>
+      <button type="button" id="v-hint-btn" class="link-btn">Need a hint?</button>
+      <p id="v-hint" class="hint-txt hidden"></p>
+    </div>
+  </section>
+  <div id="loading-screen" class="hidden" role="status">
+    <div class="glass-plate">
+      <span class="loading-kicker" id="loading-kicker">UNLOCKING COSMOS</span>
+      <p class="loading-text" id="loading-text">Preparing your birthday sky...</p>
+    </div>
+  </div>
+  <div id="dock" class="dock">
+    <div class="dock-meta">
+      <span>🎵</span>
+      <div>
+        <div class="dock-title" id="dock-song">Play music</div>
+        <div class="dock-sub" id="dock-artist"></div>
+      </div>
+    </div>
+    <div class="dock-actions">
+      <button type="button" id="dock-play" class="play-btn">Play</button>
+    </div>
+  </div>
+  <audio id="bg-audio" loop preload="auto"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="js/config-loader.js"></script>
+  <script src="js/entry.js"></script>
+</body>
+</html>

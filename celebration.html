@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title id="page-title">Happy Birthday Sakshi ✨👑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+</head>
+<body>
+  <canvas id="gold-cursor-canvas" aria-hidden="true"></canvas>
+  <canvas id="space-canvas"></canvas>
+  <canvas id="fireworks-canvas" aria-hidden="true"></canvas>
+  <nav class="page-nav-pill">
+    <a href="celebration.html" class="page-nav-link active">1. Cosmos &amp; Cake</a>
+    <a href="letter.html" class="page-nav-link">2. Letter &amp; Finale →</a>
+  </nav>
+  <div id="glow-emojis-layer" aria-hidden="true"></div>
+  <div id="bubbles-layer"></div>
+  <div id="photo-captions-layer"></div>
+  <div id="hero-bg-blur" aria-hidden="true"></div>
+  <main id="hud-layer" class="hud-main">
+    <header class="hud-section hero-hud hero-golden-stage" id="hero-golden-stage">
+      <div class="hero-glass-panel">
+        <p class="intro-line-1 intro-seq-item" id="intro-line-1"></p>
+        <p class="intro-line-2 intro-seq-item" id="intro-line-2"></p>
+        <div class="intro-milestone-badge intro-seq-item" id="intro-badge"></div>
+        <h1 class="intro-grand-title intro-seq-item" id="intro-grand-title"></h1>
+        <div class="intro-recipient-name intro-seq-item" id="intro-recipient-name"></div>
+        <div class="scroll-cue intro-seq-item">Scroll down to make your birthday wish ↓</div>
+      </div>
+    </header>
+    <section class="hud-section align-left" id="counter-sec">
+      <div class="open-block">
+        <h2 class="sec-title" id="c-title">Seconds You've Made The World Brighter</h2>
+        <p class="sec-sub" id="c-sub"></p>
+        <div class="counter-grid">
+          <div class="c-box"><strong id="d-days">0</strong><span id="l-days">Days</span></div>
+          <div class="c-box"><strong id="d-hours">0</strong><span id="l-hours">Hours</span></div>
+          <div class="c-box"><strong id="d-mins">0</strong><span id="l-mins">Minutes</span></div>
+          <div class="c-box"><strong id="d-secs">0</strong><span id="l-secs">Seconds</span></div>
+        </div>
+      </div>
+    </section>
+    <div class="cutout-zone" data-cutout-idx="0"></div>
+    <section class="hud-section cake-hero-zone" id="cake-hero-zone">
+      <div>
+        <span class="kicker">BIRTHDAY WISH</span>
+        <h2 class="sec-title" id="cake-title">Make a Birthday Wish 🎂</h2>
+        <p class="sec-sub align-center" id="cake-sub" style="margin-bottom:0.4rem;"></p>
+      </div>
+      <div class="cake-3d-stage-wrap" id="cake-3d-stage-wrap">
+        <div class="cake-3d-viewport">
+          <canvas id="cake-3d-canvas"></canvas>
+        </div>
+        <div class="cake-dual-controls">
+          <button type="button" id="blow-candles-btn" class="blow-candles-btn">🎤 Blow Candles</button>
+          <span class="cake-or-divider">OR</span>
+          <button type="button" id="tap-candles-hint-btn" class="tap-candles-pill">🕯️ Tap Each Candle</button>
+        </div>
+        <div id="mic-listening-badge" class="mic-listening-badge hidden">
+          <span class="mic-pulse-dot"></span>
+          <span>Listening — blow gently toward your microphone...</span>
+        </div>
+        <p id="cake-blow-status" class="cake-blow-status"></p>
+        <div id="wish-box" class="make-wish-reveal hidden">
+          <span class="make-wish-kicker">ALL CANDLES EXTINGUISHED</span>
+          <h3 id="w-title" class="make-wish-text">Your Wish Has Been Sent to the Stars. ✨</h3>
+          <button type="button" id="relight-candles-btn" class="relight-candles-link">Relight Candles 🕯️</button>
+        </div>
+      </div>
+    </section>
+    <section class="hud-section align-left" style="padding-bottom:1rem;">
+      <div class="open-block">
+        <h2 class="sec-title" id="p-title">From Small Age to Till Now 📸</h2>
+        <p class="sec-sub" id="p-sub" style="margin-bottom:0;"></p>
+      </div>
+    </section>
+    <div id="photo-zones"></div>
+    <div class="cutout-zone" data-cutout-idx="1"></div>
+    <section class="hud-section align-center">
+      <div class="open-block" id="promise-box">
+        <span class="kicker">CHAPTER NEXT</span>
+        <h2 class="sec-title" id="prom-title">And Here's To What's Next ✨</h2>
+        <p class="sec-sub" id="prom-text"></p>
+        <a href="letter.html" id="next-page-btn" class="btn-ruby">Open Your Keepsake Letter &amp; Finale ✨ →</a>
+      </div>
+    </section>
+  </main>
+  <div id="modal" class="modal-wrap hidden">
+    <div class="modal-card">
+      <div id="modal-body"></div>
+      <button type="button" id="modal-close" class="btn-ruby" style="width:100%;margin-top:1.2rem;">Close</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="js/config-loader.js"></script>
+  <script src="js/celebration.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title id="page-title">Happy Birthday Sakshi ✨👑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+</head>
+<body>
+  <canvas id="gold-cursor-canvas" aria-hidden="true"></canvas>
+  <canvas id="fireworks-canvas" aria-hidden="true"></canvas>
+  <nav class="page-nav-pill">
+    <a href="celebration.html" class="page-nav-link">← 1. Cosmos &amp; Cake</a>
+    <a href="letter.html" class="page-nav-link active">2. Letter &amp; Finale</a>
+  </nav>
+  <div class="theme-switcher-bar" id="theme-bar">
+    <span class="theme-label-tag" id="theme-name">Cosmic Blue</span>
+    <button type="button" class="theme-dot" data-theme="lunarRose" style="background:linear-gradient(135deg,#ff4d88,#121733);"></button>
+    <button type="button" class="theme-dot active" data-theme="cosmicBlue" style="background:linear-gradient(135deg,#38bdf8,#061129);"></button>
+    <button type="button" class="theme-dot" data-theme="nebulaViolet" style="background:linear-gradient(135deg,#c084fc,#1b0933);"></button>
+    <button type="button" class="theme-dot" data-theme="auroraEmerald" style="background:linear-gradient(135deg,#34d399,#051c17);"></button>
+    <button type="button" class="fw-toggle-btn active" id="fw-toggle-btn" aria-pressed="true">🎆</button>
+  </div>
+  <div id="glow-emojis-layer" aria-hidden="true"></div>
+  <main id="hud-layer" class="hud-main" style="padding-top:3.5rem;">
+    <section class="hud-section align-center">
+      <h2 class="sec-title" id="r-title">Why Everyone Loves You 💖</h2>
+      <p class="sec-sub" id="r-sub"></p>
+      <div class="flip-grid" id="flip-grid"></div>
+    </section>
+    <section class="hud-section align-center">
+      <h2 class="sec-title" id="n-title">Special Secret Notes 💌</h2>
+      <p class="sec-sub" id="n-sub"></p>
+      <div class="notes-grid" id="notes-grid"></div>
+    </section>
+    <section class="hud-section align-center">
+      <h2 class="sec-title" id="l-title">A Special Letter For You</h2>
+      <div class="luxury-envelope-section">
+        <div class="envelope-stage-wrap" id="envelope-stage-wrap">
+          <div class="luxury-envelope" id="luxury-envelope" role="button" tabindex="0">
+            <div class="envelope-inner-liner"></div>
+            <div class="envelope-stamp"><span>👑</span><span>02•11</span></div>
+            <div class="envelope-pocket-slip">
+              <div class="envelope-pocket-slip-line"></div>
+              <div class="envelope-pocket-slip-line" style="width:48%;"></div>
+              <div class="envelope-pocket-slip-line" style="width:56%;"></div>
+            </div>
+            <div class="envelope-pocket-folds"></div>
+            <div class="envelope-bottom-pocket"></div>
+            <div class="envelope-top-flap"></div>
+            <button type="button" class="wax-seal-btn" id="wax-seal-btn">
+              <span class="wax-seal-monogram" id="wax-seal-monogram">♛</span>
+            </button>
+            <div class="envelope-closed-front-info">
+              <span class="envelope-for-tag" id="envelope-recipient-label">PRIVATE KEEPSAKE FOR SAKSHI</span>
+              <span class="wax-seal-prompt" id="wax-seal-prompt">Tap the wax seal to break it</span>
+            </div>
+          </div>
+          <article class="sealed-letter-card" id="sealed-letter-card">
+            <div class="sealed-letter-crest" id="sealed-letter-crest">ROYAL EDITION • PERSONAL KEEPSAKE</div>
+            <h3 class="sealed-letter-greeting letter-reveal-line" id="sealed-letter-greeting"></h3>
+            <div id="sealed-letter-paragraphs"></div>
+            <p class="sealed-letter-signoff letter-reveal-line" id="sealed-letter-signoff"></p>
+            <div class="sealed-letter-signature letter-reveal-line" id="sealed-letter-signature"></div>
+            <button type="button" class="reseal-envelope-btn" id="reseal-envelope-btn">Fold &amp; Reseal ✦</button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="hud-section queen-finale-stage active" id="queen-finale-stage">
+      <div class="magical-queen-overlay">
+        <span class="kicker" id="queen-kicker">GRAND FINALE • FOREVER ICON</span>
+        <h2 class="magical-queen-title" id="queen-title">Happy Birthday Queen 👑</h2>
+        <p class="magical-queen-sub" id="queen-message"></p>
+        <div style="margin-top:1.6rem;pointer-events:auto;">
+          <button type="button" id="finale-print-btn" class="print-btn" style="padding:0.75rem 1.45rem;font-size:0.84rem;">🖨️ Print Full Birthday Keepsake</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section id="print-keepsake-sheet"></section>
+  <div id="modal" class="modal-wrap hidden">
+    <div class="modal-card">
+      <div id="modal-body"></div>
+      <button type="button" id="modal-close" class="btn-ruby" style="width:100%;margin-top:1.2rem;">Close</button>
+    </div>
+  </div>
+  <script src="js/config-loader.js"></script>
+  <script src="js/letter.js"></script>
+</body>
+</html>
